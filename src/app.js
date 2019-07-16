@@ -14,6 +14,8 @@ hbs.registerPartials(partials);
 
 const appServer = express();
 
+const port = process.env.PORT || 3000;
+
 // type of template engine
 appServer.set('view engine', 'hbs');
 
@@ -148,6 +150,6 @@ appServer.get('*',(req, res) => {
 });
 
 // server
-appServer.listen(3000, () => {
-  console.log('server is up on port 3000!!');
+appServer.listen(port, () => {
+  console.log(`server is up on port ${port}!!`);
 });

@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (event) => {
     alert('please enter a value please');
     return;
   }
-  fetch(`http://localhost:3000/weather?address=${address}`).then(resp => {
+  fetch(`/weather?address=${address}`).then(resp => {
     resp.json().then(data => {
       document.getElementById('message-1').textContent = '';
       document.getElementById('message-1').textContent = data.temperature1;
