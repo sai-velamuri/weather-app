@@ -1,0 +1,16 @@
+<html>
+  <body>
+    {{>header}}
+    {{>title}}
+    <p id="message-1">Please enter text</p>
+    <p id="message-2">getting</p>
+    <form action="" method="post">
+      <label for="location"></label>
+      <input id="inp" stype="text" name="location" placeholder="enter location">
+      <input type="submit" value='submit'> 
+    </form>
+    <h2>{{ doneBy }}</h2>
+    {{>footer}}
+    <script src='/js/app.js'></script>
+  </body>
+</html>
