@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (event) => {
   event.preventDefault();
   address = document.getElementById('inp').value;
   if (!address) {
-    alert('please enter a value');
+    alert('please enter a value please');
     return;
   }
   fetch(`http://localhost:3000/weather?address=${address}`).then(resp => {
