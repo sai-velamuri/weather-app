@@ -38,7 +38,6 @@ appServer.get('', (req, res) => {
 appServer.get('/about', (req, res) => {
   res.render('about', {
     title: 'Sai krishna',
-    myCrush: 'Katelyn Dunaski',
     name: 'Sai Krishna Sarath Velamuri'
   });
 });
